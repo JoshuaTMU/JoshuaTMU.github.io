@@ -1,0 +1,83 @@
+/* ITM780 Lab 3*/
+
+body, h1, h2, h4, p, td, th {
+    font-family: Arial, sans-serif;
+}
+
+.spacing {
+  margin-top: -1%;
+}
+
+body {
+    font-size: 12px;
+    color: black;
+    background-color: #e7eaf6;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-right: 11px;
+    margin-left: 11px;
+  }
+
+h1 {
+    font-size: 28px;
+    color: white;
+    background-color: #113f67;
+  }
+
+h2 {
+    font-size: 18px;
+    color: #113f67;
+  }
+
+h4 {
+    font-size: 14px;
+    color: black;
+  }
+
+p {
+    font-size: 12px;
+    color: black;
+  }
+
+a:link {
+    color: #113f67;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:hover {
+	color: red;
+  background-color: lightblue;
+}
+
+a:active {
+	color: blue;
+}
+
+table {
+	width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+	text-align: left;
+	padding: 0.5%;
+	border: 3px solid #113f67;
+  	color: black;
+  font-size: 14px;
+}
+
+th {
+	text-align: center;
+	padding: 1%;
+	border: 3px solid #113f67;
+  	color: white;
+  font-size: 18px;
+  background-color: #38598b;
+}
+
+li {
+  padding: 0.25%;
+}
