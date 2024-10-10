@@ -1,13 +1,103 @@
-/* ITM780 Lab 3*/
+/* ITM780 Lab 5*/
 
+/*Step B: Style of Portait Image*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #113f67;
+  border-radius: 4px;
+  width: 200px;
+}
+
+/*Step B: Style of Zoom for Portrait Image*/
+.imgZoom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  width: 400px;
+}
+
+/*Step B: Creating a caption for Image*/
+div.caption {
+  text-align: center;
+  padding: 1px 1px;
+}
+
+/*Step C: Creating a navigation menu*/
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #113f67;
+}
+
+/*Step C: Style for navigation links*/
+nav a:link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+/*Step C: Style for navigation links when mouse is hovered*/
+nav a:hover {
+  color: white;
+  background-color: #38598b;
+}
+
+/*Step C: Style for navigation links when the link as been visted*/
+nav a:visited {
+  color: white;
+}
+
+/*Step C: Font size of dropdown button*/
+.dropdownbutton {
+font-size: 14px;
+}
+
+/*Step C: position of dropdown items*/
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/*Step C: Dropdown item background*/
+.dropdownitems {
+display: none;
+position: absolute;
+background-color: #113f67;
+min-width: 90px;
+}
+
+/*Step C: Dropdown vertical alignment for items*/
+.dropdownitems a {
+display: block;
+}
+
+/*Step C: Change color of dropdown links*/
+.dropdownitems a:link {color: white;}
+.dropdownitems a:visited {color: white;} /*Step C: Change color of dropdown links when visted*/
+.dropdownitems a:hover {background-color: #38598b} /*Step C: Change color of dropdown links when mouse is hovered on items*/
+
+/*Shows dropdown menu when the Contact button is clicked*/
+.show {display:block;}
+
+/*Body, headers, paragraphs, & table font*/
 body, h1, h2, h4, p, td, th {
     font-family: Arial, sans-serif;
 }
 
+/*Spacing for List */
 .spacing {
   margin-top: -1%;
 }
 
+/*Body Style*/
 body {
     font-size: 12px;
     color: black;

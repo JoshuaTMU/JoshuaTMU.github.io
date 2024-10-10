@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ITM780 Lab 3 - Joshua Chung</title>
-<link rel="stylesheet" href="style.css">
+<title>ITM780 Lab 5 - Joshua Chung</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	
+    <!-- Step A: Created a button that will prompt the user. -->
+	<button onclick="nameprompt()">Enter Name</button>
+    <p id="ButtonPrompt"></p>
+
+<!-- Step C: Navigation menu that links to my school & program. -->
+<nav>
+    <a href="https://www.torontomu.ca/">My School</a>
+    <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">My Program</a>
+</nav>
+
+<!-- Step C: Contact button that contains my LinkedIn & Email. -->
+<div class="dropdown">
+    <button onclick="toggleFunction()" class="dropdownbutton">Contact</button>
+    <div id="contactDropdown" class="dropdownitems">
+      <a href="https://www.linkedin.com/in/joshua-chung-a0a5871b9/">LinkedIn Profile</a>
+      <a href="mailto:joshua1.chung@torontomu.ca">Email</a>
+    </div>
+  </div>
+
+<!-- Step B: Putting Portrait Image on Homescreen. -->
+<div>
+        <img src="Linkedln Picture.jpg" alt="Portrait Photo of Joshua" onclick="zoom(this)">
+</div>
+<div class="caption">
+    <p>Portrait Photo of Joshua</p>
+</div>
 
 <h1>Education</h1>
 <h2>Toronto Metropolitan University (Formerly Ryerson)</h2>
