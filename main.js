@@ -1,6 +1,20 @@
-// JavaScript ITM780 Lab 5 Document - Joshua Chung
+// JavaScript ITM780 Lab 6 Document - Joshua Chung
 
-//Step A:  Adding Event for button to prompt the user to enter their name.
+// Step B: Questions/Input Elements
+window.onload=function()
+	{
+		var user = document.getElementById("profile");
+		console.log(user.value); // the input value of the user such as full name, email, and phone number
+		console.log(user.type); // the type of element the input is
+	}
+
+var user = document.getElementById("profile"); // the text input of elements from user such as full name, email, and phone number
+
+localStorage.setItem("profile"); // stores the input or information the user has entered
+console.log(localStorage.getItem("profile"));// receives or gets the information
+localStorage.removeItem("profile"); // remove items from localstorage or clears information
+
+//Adding Event for button to prompt the user to enter their name.
 function nameprompt() {
     var message;
     var your_name = prompt("Please enter your name:");
@@ -12,17 +26,17 @@ function nameprompt() {
     document.getElementById("ButtonPrompt").innerHTML = message;
   }
 
-//Step B: Adding a toggle function to zoom in and out
+//Adding a toggle function to zoom in and out
 function zoom(element) {
     element.classList.toggle("imgZoom")
 }
 
-//Step C: Adding a toggle function to show and not show dropdown items.
+//Adding a toggle function to show and not show dropdown items.
 function toggleFunction() {
     document.getElementById("contactDropdown").classList.toggle("show");
     }
 
-//Step C: Close dropdown when dropdown is open & user clicks outside the button 
+//Close dropdown when dropdown is open & user clicks outside the button 
     window.onclick = function(event) {
         if (!event.target.matches('.dropdownbutton')) {
           var dropdowns = document.getElementsByClassName("dropdownitems");
@@ -35,7 +49,7 @@ function toggleFunction() {
         }
       }
 
-//Step D: When the mouse pointer is on dropdown items, it changes the colour to white
+//When the mouse pointer is on dropdown items, it changes the colour to white
 function mouseOver() {
   document.getElementById("contactDropdown").style.color = "white";
 }

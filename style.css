@@ -1,6 +1,11 @@
-/* ITM780 Lab 5*/
+/* ITM780 Lab 6*/
 
-/*Step B: Style of Portait Image*/
+/*Style for important information on Form*/
+.bold {
+  font-weight: bold;
+}
+
+/*Style of Portait Image*/
 img {
   display: block;
   margin-left: auto;
@@ -10,7 +15,7 @@ img {
   width: 200px;
 }
 
-/*Step B: Style of Zoom for Portrait Image*/
+/*Style of Zoom for Portrait Image*/
 .imgZoom {
   display: block;
   margin-left: auto;
@@ -19,13 +24,13 @@ img {
   width: 400px;
 }
 
-/*Step B: Creating a caption for Image*/
+/*Creating a caption for Image*/
 div.caption {
   text-align: center;
   padding: 1px 1px;
 }
 
-/*Step C: Creating a navigation menu*/
+/*Creating a navigation menu*/
 nav {
   list-style-type: none;
   margin: 0;
@@ -34,7 +39,7 @@ nav {
   background-color: #113f67;
 }
 
-/*Step C: Style for navigation links*/
+/*Style for navigation links*/
 nav a:link {
   display: block;
   color: white;
@@ -44,29 +49,29 @@ nav a:link {
   float: left;
 }
 
-/*Step C: Style for navigation links when mouse is hovered*/
+/*Style for navigation links when mouse is hovered*/
 nav a:hover {
   color: white;
   background-color: #38598b;
 }
 
-/*Step C: Style for navigation links when the link as been visted*/
+/*Style for navigation links when the link as been visted*/
 nav a:visited {
   color: white;
 }
 
-/*Step C: Font size of dropdown button*/
+/*Font size of dropdown button*/
 .dropdownbutton {
 font-size: 14px;
 }
 
-/*Step C: position of dropdown items*/
+/*Position of dropdown items*/
 .dropdown {
 position: relative;
 display: inline-block;
 }
 
-/*Step C: Dropdown item background*/
+/*Dropdown item background*/
 .dropdownitems {
 display: none;
 position: absolute;
@@ -74,12 +79,12 @@ background-color: #113f67;
 min-width: 90px;
 }
 
-/*Step C: Dropdown vertical alignment for items*/
+/*Dropdown vertical alignment for items*/
 .dropdownitems a {
 display: block;
 }
 
-/*Step C: Change color of dropdown links*/
+/*Change color of dropdown links*/
 .dropdownitems a:link {color: white;}
 .dropdownitems a:visited {color: white;} /*Step C: Change color of dropdown links when visted*/
 .dropdownitems a:hover {background-color: #38598b} /*Step C: Change color of dropdown links when mouse is hovered on items*/

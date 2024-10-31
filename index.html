@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ITM780 Lab 5 - Joshua Chung</title>
+<title>ITM780 Lab 6 - Joshua Chung</title>
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 	
-    <!-- Step A: Created a button that will prompt the user. -->
+<!-- 8 distinct types form elements I used:
+    1) Radio Buttons
+    2) Check Boxes
+    3) Single text field
+    4) Multiple text field
+    5) Submit button
+    6) Clear/Reset button
+    7) Instructions Button
+    8) Dropdown element
+-->
+    <!-- Created a button that will prompt the user. -->
 	<button onclick="nameprompt()">Enter Name</button>
     <p id="ButtonPrompt"></p>
 
-<!-- Step C: Navigation menu that links to my school & program. -->
+<!-- Navigation menu that links to my school & program. -->
 <nav>
     <a href="https://www.torontomu.ca/">My School</a>
     <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">My Program</a>
 </nav>
 
-<!-- Step C: Contact button that contains my LinkedIn & Email. -->
+<!-- Contact button that contains my LinkedIn & Email. -->
 <div class="dropdown">
     <button onclick="toggleFunction()" class="dropdownbutton">Contact</button>
     <div id="contactDropdown" class="dropdownitems">
@@ -26,7 +36,7 @@
     </div>
   </div>
 
-<!-- Step B: Putting Portrait Image on Homescreen. -->
+<!-- Putting Portrait Image on Homescreen. -->
 <div>
         <img src="Linkedln Picture.jpg" alt="Portrait Photo of Joshua" onclick="zoom(this)">
 </div>
@@ -89,6 +99,54 @@
     <li>Phone: (416) 399-8497</li>
     <li><a rel="noopener" href="https://www.linkedin.com/in/joshua-chung-a0a5871b9/">LinkedIn Profile</a></li>
 </ol>
+
+<!-- Step B: Questions/Input Elements -->
+<h1>Contact Me Form</h1>
+<input type="button" onclick="alert('If you would like to contact me, please enter your information below, and I will reach out to you shortly.')" value="Instructions"> <!-- Instruction button that alerts user on steps when clicked-->
+<form id="contactform"> 
+    <div class="bold">
+        <p>
+            Full Name: <input id="profile" type="text" value="Type Name Here"> <!-- Text input for Full Name-->
+            Email: <input id="profile" type="text" value="Type Email Here"> <!-- Text input for Email-->
+            Phone Number: <input id="profile" type="text" placeholder="(111)-111-111"> <!-- Text input for Phone Number-->
+        </p>
+    <p>
+        Please select your preferred method of contact:
+    </p>
+    </div>
+        <p>
+            <input type="checkbox" checked> Email <!-- Checkbox for Email-->
+            <input type="checkbox"> Phone Number <!-- Checkbox for Phone Number-->
+        </p>
+    <div class="bold">
+        <p>
+            Please select one option that best describes you:
+        </p>
+    </div>
+    <p>
+        <input type="radio" value="A" name="choice"> Student <!-- Radio buttons for if they are a student-->
+        <input type="radio" value="B" name="choice"> Previous Employer <!-- Radio buttons for if they are a previous employer-->
+        <input type="radio" value="C" name="choice"> Current Employer <!-- Radio buttons for if they are a current employer-->
+        <input type="radio" value="D" name="choice" checked> Other <!-- Radio buttons for if they are none of the options above-->
+    </p>
+
+    <div class="bold">
+        <p> Type of Message/Request
+         <select name="request">
+          <option value="question">Question</option> <!-- Option element for Question-->
+          <option value="message/request">Message/Request</option> <!-- Option element for Message or Request-->
+          <option value="reference">Need Reference</option> <!-- Option element if they need a reference-->
+          <option value="other">Other</option> <!-- Option element for other-->
+         </select>
+        </p>
+         <textarea name="message" rows="15" cols="100"></textarea> <!-- The text input/area to type their response-->
+    </div>
+
+    <!-- Step C: Submit & Clear Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+</form>
+
 <small>Copyright © 2024 Joshua Chung. All Rights Reserved.</small>
 </body>
 </html>
