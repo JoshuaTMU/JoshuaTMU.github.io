@@ -1,8 +1,46 @@
-/* ITM780 Lab 6*/
+/* ITM780 Lab 8*/
+
+/*Increase size of text*/
+body.largefontsize {
+font-size: 20px;
+}
+
+/*Button Style to change background colour*/
+body.colourfunction {
+  background-color: #E1BE6A;
+}
+
+/*Style for iframe video */
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 320px;
+  border: 2px solid #113f67;
+  border-radius: 4px;
+}
 
 /*Style for important information on Form*/
 .bold {
   font-weight: bold;
+}
+
+/*Style for Alt text and buttons */
+.altstyle {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 200px;
+}
+
+/*Style for the three Campus Images*/
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 30.00%;
+  padding: 3px;
 }
 
 /*Style of Portait Image*/

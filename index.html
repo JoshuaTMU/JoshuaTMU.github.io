@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ITM780 Lab 6 - Joshua Chung</title>
+<title>ITM780 Lab 8 - Joshua Chung</title>
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
-<!-- 8 distinct types form elements I used:
-    1) Radio Buttons
-    2) Check Boxes
-    3) Single text field
-    4) Multiple text field
-    5) Submit button
-    6) Clear/Reset button
-    7) Instructions Button
-    8) Dropdown element
--->
+
     <!-- Created a button that will prompt the user. -->
-	<button onclick="nameprompt()">Enter Name</button>
+    <button onclick="nameprompt()">Enter Name</button>
     <p id="ButtonPrompt"></p>
+
+    <!-- Created buttons that will make the text large, normal size, and changed the background colour. -->
+    <p>
+    <button onclick="largeText()">Large Text Size</button>
+    <button onclick="colourFunction()">Change colour of Background</button>
+    </p>
 
 <!-- Navigation menu that links to my school & program. -->
 <nav>
@@ -71,7 +67,37 @@
     </div>
         <li>Grade 12 Healthy Active Living - 2021</li>
 </Ul>
+
+<!-- Putting three Images I took of TMU's campus in the education section of the website. -->
+<div class="row">
+    <div class="column">
+        <img src="TRS.jpg" alt="Photo outside of the Ted Rogers School Of Management building on a afternoon day as I am leaving my ITM780 class and going home." onclick="zoom(this)">
+        <div class = "altstyle">
+            <p>Ted Rogers School of Management, Toronto, Ontario, Canada - November 6, 2024</p>
+            <input type="button" onclick="alert('Photo outside of the Ted Rogers School Of Management building on a afternoon day as I am leaving my ITM780 class and going home.')" value="Display Alt-Text"> <!-- Alt text button that alerts user with the description of the image when clicked-->
+        </div>
+    </div>
+    <div class="column">
+        <img src="DowntownToronto.jpg" alt="Photo of downtown Toronto during the afternoon, bustling with people, cars, stores, and advertisements" onclick="zoom(this)">
+        <div class = "altstyle">
+            <p>Yonge-Dundas Square, Toronto, Ontario, Canada - November 6, 2024</p>
+            <input type="button" onclick="alert('Photo of downtown Toronto during the afternoon, bustling with people, cars, stores, and advertisements')" value="Display Alt-Text"> <!-- Alt text button that alerts user with the description of the image when clicked-->
+        </div>
+    </div>
+    <div class="column">
+        <img src="DaphneCoxwell&GeorgeVari.jpg" alt="Photo outside of the Daphne Coxwell Complex & George Vari Engineering & Computing Centre as I am walking on the sidewalk and going home." onclick="zoom(this)">
+        <div class = "altstyle">
+            <p>Daphne Coxwell Complex (To the Left) & George Vari Engineering & Computing Centre (To the Right), Toronto, Ontario, Canada - November 6, 2024</p>
+            <input type="button" onclick="alert('Photo outside of the Daphne Coxwell Complex & George Vari Engineering & Computing Centre as I am walking on the sidewalk and going home.')" value="Display Alt-Text"> <!-- Alt text button that alerts user with the description of the image when clicked-->
+        </div>
+    </div>
+</div>
+
+<iframe src="https://www.youtube.com/embed/6PXxeHjT1xo"></iframe>
+<p>trssociety. (2018, August 22). <i>A Tour of the Ted Rogers School of Management - TRSM</i> [Video]. YouTube. https://www.youtube.com/watch?v=6PXxeHjT1xo</p>
+
 <hr>
+
 <h1>Extra-Curricular Activities</h1>
 
 <table>

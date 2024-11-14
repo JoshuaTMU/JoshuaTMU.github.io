@@ -1,6 +1,18 @@
-// JavaScript ITM780 Lab 6 Document - Joshua Chung
+// JavaScript ITM780 Lab 8 Document - Joshua Chung
 
-// Step B: Questions/Input Elements
+// Adding Event for button to toggle large text
+function largeText() 
+{
+  document.body.classList.toggle("largefontsize");
+}
+
+// Adding Event for button to toggle colour change
+function colourFunction() 
+{
+  document.body.classList.toggle("colourfunction");
+}
+
+// Questions/Input Elements
 window.onload=function()
 	{
 		var user = document.getElementById("profile");
