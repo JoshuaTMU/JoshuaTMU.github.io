@@ -1,4 +1,4 @@
-// JavaScript ITM780 Lab 8 Document - Joshua Chung
+// JavaScript ITM780 Lab 10 Document - Joshua Chung
 
 // Adding Event for button to toggle large text
 function largeText() 
