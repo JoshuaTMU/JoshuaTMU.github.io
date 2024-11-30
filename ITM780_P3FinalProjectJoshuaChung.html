@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"></html> <!-- The Portfolio website content is in english  -->
+<html>
+<head>
+    <meta charset="UTF-8">  <!-- To access symbols, emojis and other characters. -->
+    <meta name ="description" content="Joshua Chung's portfolio website, work experience, education, and extracurricular activities">
+    <meta name ="keywords" content="Portfolio website, school, assignment, lab, LinkedIn">
+    <meta name ="author" content="Joshua Chung">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Joshua Chung's Portfolio Website</title>
+    <script src="ITM780_P3FinalProjectJoshuaChung.js"></script>
+    <link rel="stylesheet" href="ITM780_P3FinalProjectJoshuaChung.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class = "logo">
+    <h3><a href ="ITM780_P3FinalProjectJoshuaChung.html">Joshua Chung's Portfolio</a></h3>
+</div>
+
+<!-- Navigation menu that links to home page, about page, school page, and contact page. -->
+<nav class ="navmenu">
+    <ul>
+        <li><a href ="ITM780_P3FinalProjectJoshuaChung.html">Home</a></li>
+        <li><a href ="About.html">About Me</a></li>
+        <li><a href ="School.html">My School</a></li>
+        <li><a href ="#contact">Contact</a></li>
+    </ul>
+</nav>
+    <!-- Created buttons that will make the text large, normal size, and changed the background colour. -->
+<br>
+
+<button class = "homebutton" onclick="largeText()">Large Text Size</button>
+<button class = "homebutton" button onclick="colourFunction()">Color Filter</button>
+
+<!-- Putting Portrait Image on Homescreen. -->
+<div>
+        <img src="Linkedln Picture.jpg" alt="Portrait Photo of Joshua" onclick="zoom(this)">
+</div>
+<div class="caption">
+    <p>Portrait Photo of Joshua</p>
+</div>
+
+<h1 id="contact">Contact Details</h1>
+<ol>
+    <li>Email: <a rel="nopener" href="mailto:joshua1.chung@torontomu.ca">joshua1.chung@torontomu.ca</a></li>
+    <li>Phone: (416) 399-8497</li>
+    <li><a href="https://www.linkedin.com/in/joshua-chung-a0a5871b9/" target="_blank"> <i class="fa fa-linkedin " style="font-size:14px;color:#113f67" alt="*LinkedIn Profile Picture"></i> </a><a rel="noopener" href="https://www.linkedin.com/in/joshua-chung-a0a5871b9/" target="_blank">LinkedIn Profile</a></li>
+</ol>
+
+<!-- Step B: Questions/Input Elements -->
+<h1>Contact Me Form</h1>
+<input class = "homebutton" type="button" onclick="alert('If you would like to contact me, please enter your information below, and I will reach out to you shortly.')" value="Instructions"> <!-- Instruction button that alerts user on steps when clicked-->
+<form id="contactform" method="post" onsubmit="return Formvalidation()"> <!--To create contact form and added a function to confirm sucessful submission-->
+    <div class="bold">
+        <p>
+            Full Name:* <input id="profile" type="text" placeholder="Type Name Here" required> <!-- Text input for Full Name-->
+            Email:* <input id="profile" type="text" placeholder="Type Email Here" required> <!-- Text input for Email-->
+            Phone Number:* <input id="profile" type="text" placeholder="(111)-111-111" required> <!-- Text input for Phone Number-->
+        </p>
+    <p>
+        Please select your preferred method of contact:
+    </p>
+    </div>
+        <p>
+            <input type="checkbox" checked> Email <!-- Checkbox for Email-->
+            <input type="checkbox"> Phone Number <!-- Checkbox for Phone Number-->
+        </p>
+    <div class="bold">
+        <p>
+            Please select one option that best describes you:
+        </p>
+    </div>
+    <p>
+        <input type="radio" value="A" name="choice"> Student <!-- Radio buttons for if they are a student-->
+        <input type="radio" value="B" name="choice"> Previous Employer <!-- Radio buttons for if they are a previous employer-->
+        <input type="radio" value="C" name="choice"> Current Employer <!-- Radio buttons for if they are a current employer-->
+        <input type="radio" value="D" name="choice" checked> Other <!-- Radio buttons for if they are none of the options above-->
+    </p>
+
+    <div class="bold">
+        <p> Type of Message/Request
+         <select name="request">
+          <option value="question">Question</option> <!-- Option element for Question-->
+          <option value="message/request">Message/Request</option> <!-- Option element for Message or Request-->
+          <option value="other">Other</option> <!-- Option element for other-->
+         </select>
+        </p>
+         <textarea name="message" rows="15" cols="100" placeholder="Please type message here*" required></textarea> <!-- The text input/area to type their response-->
+    </div>
+
+    <!-- Step C: Submit & Clear Buttons -->
+    <input class = "homebutton" type="submit" value="Submit" onclick="return validateSubmission()">
+    <input class = "homebutton" type="reset" value="Clear" onclick="return validateClear()">
+</form>
+
+<hr>
+<small>Copyright © 2024 Joshua Chung. All Rights Reserved.</small>
+</body>
+</html>

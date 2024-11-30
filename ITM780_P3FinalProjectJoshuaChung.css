@@ -1,0 +1,286 @@
+/* ITM780 P3. FinalProject - Joshua Chung*/
+
+/* Navigation bar style*/
+.navmenu ul{
+    background-color: #113f67;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.navmenu a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navmenu a:hover{
+    background-color: #38598b;
+}
+
+.navmenu li {
+    float: left;
+}
+
+.navmenu a:link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    float: left;
+    text-decoration: none;
+  }
+
+ .navmenu a:visited {
+    color: white;
+  }
+
+/* To center paragraphs*/
+ .pcenter {
+  text-align: center;
+ }
+
+ /* Logo style*/
+ .logo a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.logo a{
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* Button style change*/
+.homebutton {
+  background-color: #38598b;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*Increase size of text*/
+body.largefontsize {
+    font-size: 20px;
+    }
+    
+    /*Button Style to change background colour*/
+    body.colourfunction {
+      background-color: #E1BE6A;
+    }
+    
+    /*Style for iframe video */
+    iframe {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      height: 320px;
+      border: 2px solid #113f67;
+      border-radius: 4px;
+    }
+    
+    /*Style for important information on Form*/
+    .bold {
+      font-weight: bold;
+    }
+    
+    /*Style for Alt text and buttons */
+    .altstyle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    }
+    
+    /*Style for the three Campus Images*/
+    .row {
+      display: flex;
+    }
+    
+    .column {
+      flex: 30.00%;
+      padding: 3px;
+    }
+    
+    /*Style of Portait Image*/
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid #113f67;
+      border-radius: 4px;
+      width: 200px;
+      cursor: pointer;
+    }
+    
+    /*Style of Zoom for Portrait Image*/
+    .imgZoom {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 4px;
+      width: 400px;
+      cursor: pointer;
+    }
+    
+    /*Creating a caption for Image*/
+    div.caption {
+      text-align: center;
+      padding: 1px 1px;
+    }
+    
+    /*Creating a navigation menu*/
+    nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #113f67;
+    }
+    
+    /*Style for navigation links*/
+    nav a:link {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      float: left;
+    }
+    
+    /*Style for navigation links when mouse is hovered*/
+    nav a:hover {
+      color: white;
+      background-color: #38598b;
+    }
+    
+    /*Style for navigation links when the link as been visted*/
+    nav a:visited {
+      color: white;
+    }
+    
+    /*Font size of dropdown button*/
+    .dropdownbutton {
+    font-size: 14px;
+    }
+    
+    /*Position of dropdown items*/
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+    
+    /*Dropdown item background*/
+    .dropdownitems {
+    display: none;
+    position: absolute;
+    background-color: #113f67;
+    min-width: 90px;
+    }
+    
+    /*Dropdown vertical alignment for items*/
+    .dropdownitems a {
+    display: block;
+    }
+    
+    /*Change color of dropdown links*/
+    .dropdownitems a:link {color: white;}
+    .dropdownitems a:visited {color: white;} /*Step C: Change color of dropdown links when visted*/
+    .dropdownitems a:hover {background-color: #38598b} /*Step C: Change color of dropdown links when mouse is hovered on items*/
+    
+    /*Shows dropdown menu when the Contact button is clicked*/
+    .show {display:block;}
+    
+    /*Body, headers, paragraphs, & table font*/
+    body, h1, h2, h4, p, td, th {
+        font-family: Arial, sans-serif;
+    }
+    
+    /*Spacing for List */
+    .spacing {
+      margin-top: -1%;
+    }
+    
+    /*Body Style*/
+    body {
+        font-size: 14px;
+        color: black;
+        background-color: #e7eaf6;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        margin-right: 11px;
+        margin-left: 11px;
+      }
+    
+    h1 {
+        font-size: 28px;
+        color: white;
+        background-color: #113f67;
+      }
+    
+    h2 {
+        font-size: 18px;
+        color: #113f67;
+      }
+    
+    h4 {
+        font-size: 14px;
+        color: black;
+      }
+    
+    p {
+        font-size: 14px;
+        color: black;
+      }
+    
+    a:link {
+        color: #113f67;
+    }
+    
+    a:visited {
+        color: purple;
+    }
+    
+    a:active {
+        color: blue;
+    }
+    
+    table {
+        width: 100%;
+      border-collapse: collapse;
+    }
+    
+    td {
+        text-align: left;
+        padding: 0.5%;
+        border: 3px solid #113f67;
+          color: black;
+      font-size: 14px;
+    }
+    
+    th {
+        text-align: center;
+        padding: 1%;
+        border: 3px solid #113f67;
+          color: white;
+      font-size: 18px;
+      background-color: #38598b;
+    }
+    
+    li {
+      padding: 0.25%;
+    }
